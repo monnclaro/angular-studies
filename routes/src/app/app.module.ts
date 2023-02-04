@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
-import { AlunosComponent } from './alunos/alunos.component';
 import { CursosModule } from './cursos/cursos.module';
+import { AlunosModule } from './alunos/alunos.module';
 
 @NgModule({
   declarations: [
@@ -15,9 +15,8 @@ import { CursosModule } from './cursos/cursos.module';
     LoginComponent,
     HomeComponent,
     PaginaNaoEncontradaComponent,
-    AlunosComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, CursosModule],
+  imports: [BrowserModule, AppRoutingModule, CursosModule, AlunosModule],
   providers: [],
   bootstrap: [AppComponent],
 })

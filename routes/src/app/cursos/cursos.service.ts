@@ -13,7 +13,7 @@ export class CursosService {
     ];
   }
 
-  getCurso(id: number) {
+  getCursoById(id: number) {
     let cursos = this.getCursos();
 
     for (let i = 0; i < cursos.length; i++) {
