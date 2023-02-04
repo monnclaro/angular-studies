@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { PaginaNaoEncontradaComponent } from './pagina-nao-encontrada/pagina-nao-encontrada.component';
 import { CursosComponent } from './cursos/cursos.component';
 import { AlunosComponent } from './alunos/alunos.component';
+import { CursoDetalheComponent } from './curso-detalhe/curso-detalhe.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AlunosComponent } from './alunos/alunos.component';
     PaginaNaoEncontradaComponent,
     CursosComponent,
     AlunosComponent,
+    CursoDetalheComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
