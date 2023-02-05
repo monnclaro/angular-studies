@@ -20,10 +20,18 @@ export class AlunoDetalheComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit() {
-    this.inscricao = this.route.params.subscribe((params: any) => {
-      let id = params['id'];
+    /*this.inscricao = this.route.params.subscribe(
+      (params: any) => {
+        let id = params['id'];
+        this.aluno = this.alunosService.getAluno(id);
+      }
+    );*/
 
-      this.aluno = this.service.getAlunoById(id);
+    console.log('ngOnInit: AlunoDetalheComponent');
+
+    this.inscricao = this.route.data.subscribe((info: { aluno: Aluno }) => {
+      console.log('Recebendo o obj Aluno do resolver');
+      this.aluno = info.aluno;
     });
   }
 
